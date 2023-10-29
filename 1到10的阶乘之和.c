@@ -2,20 +2,31 @@
 int main()
 {
 	int i=0;
-	int p;
 	int q=1;
 	long int sum=0;
 	for(i=1;i<=10;i++)
 	{
-		q=1;
-		for(p=1;p<=i;p++)
-		{
-			q=q*p;
-		}
+		q=q*i;
 		sum+=q;
 	}
 	printf("%d\n",sum);
 }
+//{
+//	int i=0;
+//	int p;
+//	int q=1;
+//	long int sum=0;
+//	for(i=1;i<=10;i++)
+//	{
+//		q=1;
+//		for(p=1;p<=i;p++)
+//		{                            方法二，较为复杂
+//			q=q*p;
+//		}
+//		sum+=q;
+//	}
+//	printf("%d\n",sum);
+//}
 //{
 //	int i=0;
 //	int p;
