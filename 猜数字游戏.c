@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>  //rand函数头文件
-#include<time.h>
+#include<time.h>    //头文件
 void menu()
 {
 	printf("****************************\n");
@@ -12,7 +12,7 @@ void game()
 	//生成随机数
 	//拿时间戳设计随机数生成器
 	//time_t time(time_t *timer)
-	int ret=rand()%100+1;  //生成一个1~100随机数函数，无参，返回整型
+	int ret=rand()%100+1;  //生成一个1~100随机数函数，无参，返回整型，rand()%n，生成0~n-1中的随机数字
 	int guess=0;   //接收猜的数字
 	printf("%d\n",ret);
 	while(1)
