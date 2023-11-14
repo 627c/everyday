@@ -22,7 +22,6 @@ void DisplayBoard(char board[ROWS][COLS],int row,int col)
 		printf("%d ",i);
 	}
 	printf("\n");
-	printf("%c",board[1][1]);
 	for(i=1;i<=row;i++)
 	{
 		printf("%d ",i);
@@ -58,6 +57,58 @@ void SetMine(char board[ROWS][COLS],int row,int col)
 		}
 	}
 }
+int get_mine_count(char mine[ROWS][COLS],int x,int y)
+{
+	//周围坐标里面值加起来就为雷的个数，‘1’-‘0’=1
+	return mine[x-1][y]+
+	mine[x-1][y+1]+
+	mine[x][y+1]+
+	mine[x+1][y+1]+
+	mine[x+1][y]+
+	mine[x+1][y-1]+
+	mine[x][y-1]+
+	mine[x-1][y-1]-8*'0';
+}
+void FindMine(char mine[ROWS][COLS],char show[ROWS][COLS],int row,int col)
+{
+	int x=0;
+	int y=0;
+	int win=0;
+	//9*9-10
+	while(win<row*col-EASY_COUNT)
+	{
+		printf("请输入排查雷的坐标：");
+		scanf("%d%d",&x,&y);
+		if(x>=1&&x<=row&&y>=1&&y<=col)
+		{
+			//坐标合法
+			//1.踩雷
+			if(mine[x][y]=='1')
+			{
+				printf("很遗憾，你被炸死了\n");
+				DisplayBoard(mine,row,col);
+				break;
+			}
+			else   //不是雷
+			{
+				//计算x，y坐标周围有几个雷
+				int count=get_mine_count(mine,x,y);
+				show[x][y]=count+'0';
+				DisplayBoard(show,row,col);
+				win++;
+			}
+		}
+		else
+		{
+			printf("输入坐标非法，请重新输入\n");
+		}
+	}
+	if(win==row*col-EASY_COUNT)
+	{
+		printf("恭喜你，排雷成功\n");
+		DisplayBoard(mine,row,col);
+	}
+}
 void game()
 {
 //	printf("lei\n");
@@ -75,6 +126,8 @@ void game()
 	//布置雷
 	SetMine(mine,ROW,COL);
 	DisplayBoard(mine,ROW,COL);
+	//查找雷
+	FindMine(mine,show,ROW,COL);
 }
 void test()
 {
