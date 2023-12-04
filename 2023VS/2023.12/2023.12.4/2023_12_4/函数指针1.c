@@ -8,5 +8,7 @@ int main()
 {
 	int (*pa)(int, int) = Add;
 	printf("%d\n", (*pa)(2, 3));
+	printf("%d\n", (pa)(2, 3));
+	printf("%d\n", pa(2, 3));
 	return 0;
 }
