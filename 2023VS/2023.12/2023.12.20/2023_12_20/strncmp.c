@@ -3,9 +3,10 @@
 #include<string.h>
 int main()
 {
-	char arr1[10] = "abcdef";
-	char arr2[] = "hello world";
-	strncpy(arr1, arr2, 4);
-	printf("%s\n", arr1);
+	//strncmp-×Ö·û´®±È½Ï
+	const char* p1 = "abcdef";
+	char* p2 = "abcqwer";
+	int ret = strncmp(p1, p2, 3);
+	printf("%d\n", ret);
 	return 0;
 }
