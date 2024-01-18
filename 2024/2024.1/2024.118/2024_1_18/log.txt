@@ -1,0 +1,10 @@
+file:D:\每日一题\everyday\2024\2024.1\2024.118\2024_1_18\写日志文件.c line:12 date:Jan 18 2024 time:14:06:47 i=0
+file:D:\每日一题\everyday\2024\2024.1\2024.118\2024_1_18\写日志文件.c line:12 date:Jan 18 2024 time:14:06:47 i=1
+file:D:\每日一题\everyday\2024\2024.1\2024.118\2024_1_18\写日志文件.c line:12 date:Jan 18 2024 time:14:06:47 i=2
+file:D:\每日一题\everyday\2024\2024.1\2024.118\2024_1_18\写日志文件.c line:12 date:Jan 18 2024 time:14:06:47 i=3
+file:D:\每日一题\everyday\2024\2024.1\2024.118\2024_1_18\写日志文件.c line:12 date:Jan 18 2024 time:14:06:47 i=4
+file:D:\每日一题\everyday\2024\2024.1\2024.118\2024_1_18\写日志文件.c line:12 date:Jan 18 2024 time:14:06:47 i=5
+file:D:\每日一题\everyday\2024\2024.1\2024.118\2024_1_18\写日志文件.c line:12 date:Jan 18 2024 time:14:06:47 i=6
+file:D:\每日一题\everyday\2024\2024.1\2024.118\2024_1_18\写日志文件.c line:12 date:Jan 18 2024 time:14:06:47 i=7
+file:D:\每日一题\everyday\2024\2024.1\2024.118\2024_1_18\写日志文件.c line:12 date:Jan 18 2024 time:14:06:47 i=8
+file:D:\每日一题\everyday\2024\2024.1\2024.118\2024_1_18\写日志文件.c line:12 date:Jan 18 2024 time:14:06:47 i=9
